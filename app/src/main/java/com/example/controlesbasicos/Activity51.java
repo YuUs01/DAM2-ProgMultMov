@@ -42,9 +42,9 @@ public class Activity51 extends AppCompatActivity {
 
         //Actividad 5.1.4
 
-        setContentView(R.layout.activity_5_1);
-        TextView tvContenido = findViewById(R.id.tvContenido);
-        Typeface typeface = ResourcesCompat.getFont(this, R.font.demo_coneriascript);
-        tvContenido.setTypeface(typeface);
+//        setContentView(R.layout.activity_5_1);
+//        TextView tvContenido = findViewById(R.id.tvContenido);
+//        Typeface typeface = ResourcesCompat.getFont(this, R.font.demo_coneriascript);
+//        tvContenido.setTypeface(typeface);
     }
 }
