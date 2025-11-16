@@ -35,15 +35,12 @@ public class Activity56 extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         if (v.getId() == R.id.button && !isActivo) {
             isActivo = true;
-            i = 0; // Reiniciamos el progreso si quieres que se pueda repetir
-
+            i = 0;
             Thread hilo = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     while (i <= 100) {
-
                         final int progresoActual = i;
-
                         h.post(new Runnable() {
                             @Override
                             public void run() {
@@ -58,9 +55,7 @@ public class Activity56 extends AppCompatActivity implements View.OnClickListene
                                 }
                             }
                         });
-
                         i++;
-
                         try {
                             Thread.sleep(100);
                         } catch (InterruptedException e) {
@@ -69,7 +64,6 @@ public class Activity56 extends AppCompatActivity implements View.OnClickListene
                     }
                 }
             });
-
             hilo.start();
         }
     }
