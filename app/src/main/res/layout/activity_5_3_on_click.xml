@@ -16,7 +16,7 @@
         android:background="@drawable/borde_textview"
         android:gravity="center"
         android:padding="8dp"
-        android:text="@string/titulo_programacion"
+        android:text="@string/mi_nombre"
         android:textColor="@android:color/darker_gray"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
