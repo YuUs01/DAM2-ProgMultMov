@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActivityRadioButton">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cu_l_es_tu_nivel_de_experiencia_en_android"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+<!--
+Un RadioButton es un botón de dos estados (seleccionado o no seleccionado).
+A diferencia de los CheckBox, los RadioButton se usan en un grupo (RadioGroup)
+para que solo una opción pueda ser seleccionada a la vez. Al seleccionar un
+RadioButton, cualquier otro que estuviera seleccionado en el mismo grupo
+se desmarca automáticamente. Son ideales para que el usuario elija
+una única opción de una lista de alternativas mutuamente excluyentes.
+
+RadioGroup: Es el contenedor invisible que gestiona la lógica de selección única.
+
+android:id="@+id/radioGroupNivel": El identificador del grupo, que usaremos para
+asignarle un listener.
+
+RadioButton: Cada una de las opciones seleccionables. Cada uno tiene su propio id
+para poder identificarlo.
+-->
+    <RadioGroup
+        android:id="@+id/radioGroupNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonPrincipiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/principiante"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonIntermedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intermedio"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonAvanzado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avanzado"
+            android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <!--
+android:onClick="confirmarSeleccion"
+Cuando hagamos click sobre el botón, se llamará
+al método "confirmarSeleccion"
+Si tuvieramos varios botones, es más profesional
+implementar el método onClick() de la interfaz
+View.OnClickListener, como hemos visto anteriormente
+-->
+    <Button
+        android:id="@+id/button_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Confirmar Selección"
+        android:onClick="confirmarSeleccion"/>
+</LinearLayout>

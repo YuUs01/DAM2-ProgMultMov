@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".ActivitySpinner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecciona_un_planeta"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+<!--
+Un Spinner es un widget que muestra un menú desplegable
+con una lista de valores, de la cual el usuario puede seleccionar uno.
+Es el equivalente en Android a una lista desplegable o dropdown.
+
+android:id="@+id/spinnerPlanetas": Identificador único
+para referenciar el Spinner desde el código Java.
+android:layout_height="48dp": Se recomienda una altura mínima
+de 48dp para elementos táctiles para una buena accesibilidad.
+-->
+    <Spinner
+        android:id="@+id/spinnerPlanetas"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planeta_seleccionado_ninguno"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ActivityRatinBar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/por_favor_valora_nuestra_aplicaci_n"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+<!--
+Una RatingBar es un control que permite a los usuarios calificar algo mediante estrellas.
+Es una extensión de SeekBar y ProgressBar que muestra una calificación con estrellas.
+Es el componente perfecto para valorar productos, películas, servicios o
+cualquier contenido dentro de tu aplicación.
+
+android:id="@+id/ratingBar": Identificador único para referenciar la RatingBar
+desde el código.
+
+android:numStars="5": Define el número total de estrellas que se mostrarán.
+
+android:stepSize="0.5": Permite calificaciones con medias estrellas.
+Si quieres solo estrellas completas, pon 1.0.
+
+android:rating="2.5": Establece la calificación inicial que se mostrará al cargar la vista.
+-->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="2.5" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valoraci_n_2_5_5_0"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enviar_valoraci_n"
+        android:onClick="enviarValoracion"/>
+
+</LinearLayout>

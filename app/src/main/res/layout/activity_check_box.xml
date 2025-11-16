@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActivityCheckBox">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecciona_tus_hobbies"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+<!--
+Un CheckBox es un tipo de botón de dos estados: marcado (checked) o desmarcado (unchecked).
+Se utiliza cuando el usuario necesita seleccionar una o varias opciones de un conjunto de alternativas.
+Cada CheckBox funciona de manera independiente de los demás.
+-->
+    <CheckBox
+        android:id="@+id/checkbox_deporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hacer_deporte"
+        android:onClick="onCheckboxClicked"/>
+<!--
+android:onClick="onCheckboxClicked":
+Este atributo es fundamental. Le dice a Android que, cuando este CheckBox
+sea pulsado, debe buscar y ejecutar un método llamado
+onCheckboxClicked en la Activity asociada.
+Esto nos evita tener que configurar un OnClickListener
+manualmente en el código Java.
+-->
+    <CheckBox
+        android:id="@+id/checkbox_leer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leer_libros"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_programar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/programar"
+        android:onClick="onCheckboxClicked"/>
+
+    <!--
+    android:onClick="mostrarSeleccion"
+    Cuando hagamos click sobre el botón, se llamará
+    al método "mostrarSeleccion"
+    Si tuvieramos varios botones, es más profesional
+    implementar el método onClick() de la interfaz
+    View.OnClickListener, como hemos visto anteriormente
+    -->
+    <Button
+        android:id="@+id/button_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mostrar_selecci_n"
+        android:onClick="mostrarSeleccion"/>
+
+</LinearLayout>

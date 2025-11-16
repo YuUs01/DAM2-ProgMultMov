@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".ActivityProgressBar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_de_duraci_n_desconocida"
+        android:textSize="18sp"/>
+<!--
+Una ProgressBar es un componente visual que indica al usuario el
+progreso de una operación. Existen dos modalidades principales:
+1. Indeterminada (Circular por defecto): ⏳ Se usa cuando no se conoce
+la duración de la tarea. Muestra una animación continua (una rueca o spinner)
+para indicar que algo está sucediendo.
+-->
+    <ProgressBar
+        android:id="@+id/progressBarCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+<!--
+android:onClick: Vincula cada botón a un método específico en nuestra Activity.
+-->
+    <Button
+        android:id="@+id/buttonIniciarCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/simular_carga"
+        android:onClick="iniciarCarga"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginVertical="32dp"/>
+
+    <TextView
+        android:id="@+id/textViewProgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_programada_0"
+        android:textSize="18sp"/>
+<!--
+2. Determinada (Lineal por defecto): 📊 Se usa para tareas cuya duración o progreso
+se puede medir. Muestra una barra que se va llenando de 0 al máximo,
+indicando qué porcentaje de la tarea se ha completado.
+
+android:visibility="gone": Mantiene la barra circular oculta hasta que la necesitemos.
+
+style="?android:attr/progressBarStyleHorizontal":
+Este es el atributo crucial para que la ProgressBar se muestre
+como una barra lineal en lugar de la rueca por defecto.
+
+android:max="100": Define el valor máximo para la barra lineal (ideal para porcentajes).
+
+android:progress="0": El valor de progreso inicial.
+-->
+    <ProgressBar
+        android:id="@+id/progressBarLineal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/buttonIniciarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Iniciar Tarea"
+        android:onClick="iniciarTarea"/>
+
+</LinearLayout>

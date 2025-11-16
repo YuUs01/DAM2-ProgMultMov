@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+PARA LA ACTIVIDAD 5.1
+PARA LA ACTIVIDAD 5.3
+PARA LA ACTIVIDAD 5.4
+PARA LA ACTIVIDAD 5.5
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/darker_gray" />
+    <corners android:radius="4dp" />
+</shape>

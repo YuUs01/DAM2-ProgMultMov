@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="miColorRed">#ff0000</color>
+    <!--
+    PARA LA ACTIVIDAD 5.1
+    -->
+    <color name="custom_red">#FF0000</color>
+    <color name="custom_blue">#0000FF</color>
+    <!--
+    PARA LA ACTIVIDAD 5.3
+    -->
+    <color name="custom_green">#008000</color>
+
+</resources>

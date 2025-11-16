@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActivityMultiAutoCompleteTextView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduce_los_nombres_de_tus_lenguajes_de_programaci_n_favoritos"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+<!--El MultiAutoCompleteTextView es una subclase de AutoCompleteTextView que
+permite al usuario seleccionar múltiples valores de una lista de sugerencias.
+Cada vez que el usuario elige un elemento de la lista desplegable,
+este se añade al campo de texto, separado por un token
+(normalmente una coma seguida de un espacio). A continuación,
+el autocompletado se reinicia para que el usuario pueda introducir
+el siguiente valor. -->
+    <!--
+Atributos clave:
+android:id="@+id/multiAutoCompleteTextView": Es el identificador
+único para poder referenciarlo desde el código Java.
+android:hint: Muestra un texto de ayuda cuando el campo está vacío.
+android:completionThreshold="1": Indica que las sugerencias de autocompletado deben aparecer después de que el usuario haya escrito tan solo un carácter.
+    -->
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ej_java_python_kotlin"
+        android:completionThreshold="1" />
+</LinearLayout>

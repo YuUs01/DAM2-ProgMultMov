@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ActivitySeekBar">
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volumen_50"
+        android:textSize="22sp"
+        android:layout_marginBottom="24dp"/>
+<!--
+Un SeekBar es una barra de progreso que el usuario puede arrastrar para seleccionar
+un valor numérico dentro de un rango predefinido.
+Es muy útil para ajustar configuraciones como el volumen, el brillo de la pantalla,
+o cualquier valor que necesite un control gradual y visual. slider control
+
+android:id="@+id/seekBarVolumen": Identificador único para referenciar el SeekBar
+desde Java.
+
+android:max="100": Define el valor máximo que puede tener la barra.
+El valor mínimo es siempre 0.
+
+android:progress="50": Establece el valor inicial con el que aparecerá
+la barra al cargar la pantalla.
+-->
+    <SeekBar
+        android:id="@+id/seekBarVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" />
+</LinearLayout>

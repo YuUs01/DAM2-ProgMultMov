@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ActivitySwitch">
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/el_modo_oscuro_est_desactivado"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+<!--
+Un Switch es un control de dos estados: encendido (ON) o apagado (OFF).
+Permite al usuario activar o desactivar una opción de forma inmediata.
+Visualmente, es un interruptor que se puede deslizar.
+Es ideal para ajustes de configuración como activar/desactivar el Wi-Fi,
+notificaciones, modo oscuro, etc.
+
+android:id="@+id/switchModoOscuro": Identificador único para referenciar
+el Switch desde el código Java.
+
+android:text: Etiqueta de texto que aparece junto al interruptor.
+
+android:layout_height="48dp": Se establece una altura mínima para
+cumplir con las guías de accesibilidad de Android.
+-->
+    <Switch
+        android:id="@+id/switchModoOscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/modo_oscuro"
+        android:textSize="16sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+</LinearLayout>

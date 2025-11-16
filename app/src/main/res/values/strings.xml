@@ -1,0 +1,93 @@
+<resources>
+    <string name="mi_nombre">YOUSSEF KADDOURI BOUDIB</string>
+    <string name="app_name">ControlesBasicos</string>
+    <string name="hello_world">Hello World</string>
+    <string name="no_pulsado">NO PULSADO</string>
+    <string name="pulsado">PULSADO</string>
+    <string name="bot_n_1">BOTÓN_1</string>
+    <string name="introduce_el_texto">Introduce el texto</string>
+    <string name="introduce_el_nombre_de_un_lenguaje_de_programaci_n">Introduce el nombre de un lenguaje de programación:</string>
+    <string name="ej_java">Ej: Java...</string>
+    <string name="introduce_los_nombres_de_tus_lenguajes_de_programaci_n_favoritos">Introduce los nombres de tus lenguajes de programación favoritos:</string>
+    <string name="ej_java_python_kotlin">Ej: Java, Python, Kotlin...</string>
+    <string name="planeta_seleccionado_ninguno">Planeta seleccionado: Ninguno</string>
+    <string name="selecciona_un_planeta">Selecciona un planeta:</string>
+    <string name="hacer_deporte">Hacer deporte</string>
+    <string name="selecciona_tus_hobbies">Selecciona tus hobbies:</string>
+    <string name="leer_libros">Leer libros</string>
+    <string name="programar">Programar</string>
+    <string name="mostrar_selecci_n">Mostrar selección</string>
+    <string name="avanzado">Avanzado</string>
+    <string name="intermedio">Intermedio</string>
+    <string name="principiante">Principiante</string>
+    <string name="cu_l_es_tu_nivel_de_experiencia_en_android">¿Cuál es tu nivel de experiencia en Android?</string>
+    <string name="el_modo_oscuro_est_desactivado">El modo oscuro está desactivado</string>
+    <string name="modo_oscuro">Modo Oscuro</string>
+    <string name="volumen_50">Volumen: 50</string>
+    <string name="enviar_valoraci_n">Enviar Valoración</string>
+    <string name="valoraci_n_2_5_5_0">Valoración: 2.5 / 5.0</string>
+    <string name="por_favor_valora_nuestra_aplicaci_n">Por favor, valora nuestra aplicación:</string>
+    <string name="tarea_de_duraci_n_desconocida">Tarea de duración desconocida</string>
+    <string name="tarea_programada_0">Tarea programada: 0%</string>
+    <string name="simular_carga">Simular Carga</string>
+
+    <!--
+    Definir los datos en archivos de recursos (strings.xml, arrays.xml, etc.) es una buena práctica
+    porque facilita la localización (traducción a otros idiomas) y el mantenimiento de la aplicación.
+    -->
+    <string-array name="planets_array">
+        <item>Selecciona un planeta...</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+
+    <!--
+    PARA LA ACTIVIDAD 5.1
+    -->
+    <string name="titulo_programacion">PROGRAMACIÓN MULTIMEDIA</string>
+    <string name="texto_construido_desde_el_xml_ntama_o_20sp_bold_y_color_red">Texto construido desde el XML.\nTamaño 20sp, Bold y color Red</string>
+
+    <!--
+     PARA LA ACTIVIDAD 5.3
+     -->
+    <string name="boton_sin_pulsar">BOTÓN SIN PULSAR</string>
+    <string name="boton_pulsado">BOTÓN PULSADO</string>
+    <string name="texto_boton">BOTÓN</string>
+
+    <string name="boton_1_pulsado">BOTÓN 1 PULSADO</string>
+    <string name="boton_2_pulsado">BOTÓN 2 PULSADO</string>
+    <string name="texto_boton_1">BOTÓN 1</string>
+    <string name="texto_boton_2">BOTÓN 2</string>
+
+    <!--
+     PARA LA ACTIVIDAD 5.4
+     -->
+    <string name="label_phone">Teclado Telefónico</string>
+    <string name="hint_phone">Introduce un número de teléfono</string>
+
+    <string name="label_number">Teclado Numérico</string>
+    <string name="hint_number">Introduce solo números</string>
+
+    <string name="label_email">Teclado para Email</string>
+    <string name="hint_email">Introduce tu correo electrónico</string>
+
+    <string name="label_pin">Teclado de PIN</string>
+    <string name="hint_pin">Introduce tu PIN de 4 dígitos</string>
+
+    <!--
+     PARA LA ACTIVIDAD 5.5
+     -->
+    <string name="dia_lunes">LUNES</string>
+    <string name="dia_martes">MARTES</string>
+    <string name="dia_miercoles">MIÉRCOLES</string>
+    <string name="dia_jueves">JUEVES</string>
+    <string name="dia_viernes">VIERNES</string>
+    <string name="dia_sabado">SÁBADO</string>
+    <string name="dia_domingo">DOMINGO</string>
+</resources>
