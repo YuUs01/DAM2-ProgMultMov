@@ -16,7 +16,7 @@ public class Activity51 extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Actividad 5.1.1 que consiste en mostrar el layout creado
-       // setContentView(R.layout.activity_5_1);
+//        setContentView(R.layout.activity_5_1);
 
 
         //Actividad 5.1.2
@@ -40,11 +40,11 @@ public class Activity51 extends AppCompatActivity {
 //        tvContenido.append("\nTexto añadido con Append desde Java");
 //        tvContenido.setTextColor(ContextCompat.getColor(this, R.color.custom_blue));
 
-        //Activity 5.1.4
+        //Actividad 5.1.4
 
-//        setContentView(R.layout.activity_5_1);
-//        TextView tvContenido = findViewById(R.id.tvContenido);
-//        Typeface typeface = ResourcesCompat.getFont(this, R.font.demo_coneriascript);
-//        tvContenido.setTypeface(typeface);
+        setContentView(R.layout.activity_5_1);
+        TextView tvContenido = findViewById(R.id.tvContenido);
+        Typeface typeface = ResourcesCompat.getFont(this, R.font.demo_coneriascript);
+        tvContenido.setTypeface(typeface);
     }
 }
