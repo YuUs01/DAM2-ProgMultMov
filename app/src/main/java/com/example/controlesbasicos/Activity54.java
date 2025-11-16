@@ -21,14 +21,12 @@ public class Activity54 extends AppCompatActivity implements TextView.OnEditorAc
         setContentView(R.layout.activity_5_4);
         correoEditText = findViewById(R.id.editTextEmail);
 
-        // 4. Asigna 'this' (la Activity) como el listener para los eventos
         correoEditText.setOnEditorActionListener(this);
         correoEditText.addTextChangedListener(this);
     }
 
     public void afterTextChanged(Editable s) {
         // Se llama justo después de que el texto ha cambiado.
-        // Útil para validaciones.
         if (s.length() > 0 && !s.toString().contains("@")) {
             correoEditText.setError("El correo no es válido");
         } else {
